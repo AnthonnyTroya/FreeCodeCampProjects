@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <main class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">
+                Registro del Usuario
+            </h1>
+            <p id="description" class="description text-center">Registrate en nuestra App y obten nuestros beneficios</p>
+        </header>
+        <form id="survey-form">
+            <article class="form-group">
+                <label id="name-label" for="name">Nombre</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </article>
+            <article class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+            </article>
+            <article class="form-group">
+                <label id="number-label" for="number">Edad<span class="clue">(optional)</span></label
+              >
+              <input
+                type="number"
+                name="age"
+                id="number"
+                min="10"
+                max="99"
+                class="form-control"
+                placeholder="Age"
+              />
+            </article>
+            <article class="form-group">
+              <p>Qué opción describe mejor su rol actual?</p>
+              <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Seleccion</option>
+                <option value="student">Estudiante</option>
+                <option value="job">Trabajo a tiempo completo</option>
+                <option value="learner">Estudiante a tiempo completo</option>
+                <option value="preferNo">Prefiero no decirlo</option>
+                <option value="other">Otros</option>
+              </select>
+            </article>
+        
+            <article class="form-group">
+              <p>Te gusta mi trabajo?</p>
+              <label>
+                <input
+                  name="user-recommend"
+                  value="definitely"
+                  type="radio"
+                  class="input-radio"
+                  checked
+                />Definitivamente</label
+              >
+              <label>
+                <input
+                  name="user-recommend"
+                  value="maybe"
+                  type="radio"
+                  class="input-radio"
+                />Quizas</label
+              >
+        
+              <label
+                ><input
+                  name="user-recommend"
+                  value="not-sure"
+                  type="radio"
+                  class="input-radio"
+                />No me gusta</label
+              >
+            </article>
+        
+            <article class="form-group">
+              <p>
+               Que te ha gustado de mi trabajo?
+              </p>
+              <select id="most-like" name="mostLike" class="form-control" required>
+                <option disabled selected value>Opciones</option>
+                <option value="challenges">Desafios</option>
+                <option value="projects">Projectos</option>
+                <option value="community">Comunicacion</option>
+                <option value="openSource">Codigo Abierto?</option>
+              </select>
+            </article>
+        
+            <article class="form-group">
+              <p>
+               Que crees que deberia mejorar
+                <span class="clue">clic</span>
+              </p>
+        
+              <label
+                ><input
+                  name="prefer"
+                  value="front-end-projects"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Front-end Projects</label
+              >
+              <label>
+                <input
+                  name="prefer"
+                  value="back-end-projects"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Back-end Projects</label
+              >
+              <label
+                ><input
+                  name="prefer"
+                  value="data-visualization"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Data Visualization</label
+              >
+              <label
+                ><input
+                  name="prefer"
+                  value="challenges"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Challenges</label
+              >
+              <label
+                ><input
+                  name="prefer"
+                  value="open-source-community"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Open Source Community</label
+              >
+              <label
+                ><input
+                  name="prefer"
+                  value="gitter-help-rooms"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Gitter help rooms</label
+              >
+             
+            </article>
+        
+            <div class="form-group">
+              <p>Comentarios y preguntas?</p>
+              <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter your comment here..."
+              ></textarea>
+            </div>
+        
+            <div class="form-group">
+              <button type="submit" id="submit" class="submit-button">
+                Enviar
+              </button>
+            </div>
+          </form>
+        
+    </main>
+</body>
+
+</html>
